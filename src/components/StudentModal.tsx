@@ -8,6 +8,10 @@ import {
   ModalFooter,
   Button,
   useDisclosure,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
 } from "@chakra-ui/react";
 interface Prop {
   isOpen: boolean;
@@ -15,18 +19,45 @@ interface Prop {
 }
 const StudentModal = ({ isClose, isOpen }: Prop) => {
   return (
-    <Modal isOpen={isOpen} onClose={isClose}>
+    <Modal isOpen={isOpen} onClose={isClose} size="xl">
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Modal Title</ModalHeader>
+        <ModalHeader>Add new Student</ModalHeader>
         <ModalCloseButton />
-        <ModalBody></ModalBody>
+        <ModalBody>
+          <FormControl>
+            <FormLabel>First Name</FormLabel>
+            <Input />
+          </FormControl>
+          <FormControl>
+            <FormLabel>Last Name</FormLabel>
+            <Input />
+          </FormControl>
+          <FormControl id="email">
+            <FormLabel>Email address</FormLabel>
+            <Input type="email" />
+          </FormControl>
+          <FormControl>
+            <FormLabel>Phone Number</FormLabel>
+            <Input
+              placeholder="+855 (___) __-___-___"
+              color={"gray.500"}
+              _placeholder={{
+                color: "gray.500",
+              }}
+            />
+          </FormControl>
+          <FormControl>
+            <FormLabel>Address</FormLabel>
+            <Textarea />
+          </FormControl>
+        </ModalBody>
 
         <ModalFooter>
           <Button colorScheme="blue" mr={3} onClick={isClose}>
-            Close
+            Cancel
           </Button>
-          <Button variant="ghost">Secondary Action</Button>
+          <Button variant="ghost">Save</Button>
         </ModalFooter>
       </ModalContent>
     </Modal>
