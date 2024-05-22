@@ -1,20 +1,20 @@
 import React from "react";
 import BoxDetail from "../components/BoxDetail";
 import {
-  Box,
-  Button,
-  HStack,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Table,
-  TableCaption,
-  Tbody,
-  Td,
-  Th,
-  Thead,
+    Box,
+    Button,
+    HStack,
+    Input,
+    InputGroup,
+    InputRightElement,
+    Table,
+    TableCaption,
+    Tbody,
+    Td,
+    Th,
+    Thead,
 } from "@chakra-ui/react";
-import { IoIosSearch } from "react-icons/io";
+import {IoIosSearch} from "react-icons/io";
 
 const Category = () => {
   return (

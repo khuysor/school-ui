@@ -1,15 +1,16 @@
 import React from "react";
 import Layout from "./components/Layout";
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Category from "./page/Category";
-import { PiStudentLight } from "react-icons/pi";
-import { FiSettings } from "react-icons/fi";
-import { BiCategory } from "react-icons/bi";
-import { MdOutlineLibraryBooks } from "react-icons/md";
-import { LiaAddressCardSolid } from "react-icons/lia";
+import {PiStudentLight} from "react-icons/pi";
+import {FiSettings} from "react-icons/fi";
+import {BiCategory} from "react-icons/bi";
+import {MdOutlineLibraryBooks} from "react-icons/md";
+import {LiaAddressCardSolid} from "react-icons/lia";
 import Student from "./page/Student";
 import Course from "./page/Course";
 import Register from "./page/Register";
+
 function App() {
   const menu = [
     { id: 0, name: "Dashboard", link: "/", icon: PiStudentLight },

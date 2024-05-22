@@ -1,34 +1,33 @@
-import React, { ReactNode, useState } from "react";
+import React from "react";
 import {
-  IconButton,
   Avatar,
   Box,
+  BoxProps,
+  Button,
   CloseButton,
-  Flex,
-  HStack,
-  VStack,
-  Icon,
-  useColorModeValue,
   Drawer,
   DrawerContent,
-  Text,
-  useDisclosure,
-  BoxProps,
+  Flex,
   FlexProps,
+  HStack,
+  Icon,
+  IconButton,
   Menu,
   MenuButton,
-  MenuItem,
   MenuDivider,
+  MenuItem,
   MenuList,
+  Text,
   useColorMode,
+  useColorModeValue,
+  useDisclosure,
+  VStack,
 } from "@chakra-ui/react";
-import { Link, useLocation } from "react-router-dom";
-import { IoIosSunny } from "react-icons/io";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { Button } from "@chakra-ui/react";
-import { FiMenu, FiBell, FiChevronDown } from "react-icons/fi";
-import { IconType } from "react-icons";
-import { Outlet } from "react-router-dom";
+import {Link, Outlet, useLocation} from "react-router-dom";
+import {IoIosSunny} from "react-icons/io";
+import {BsFillMoonStarsFill} from "react-icons/bs";
+import {FiBell, FiChevronDown, FiMenu} from "react-icons/fi";
+import {IconType} from "react-icons";
 
 interface Menu {
   id: number;

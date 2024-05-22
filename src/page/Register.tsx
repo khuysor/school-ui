@@ -7,14 +7,12 @@ import {
   InputRightElement,
   Table,
   TableCaption,
-  TableContainer,
   Tbody,
   Td,
   Th,
   Thead,
-  useColorModeValue,
 } from "@chakra-ui/react";
-import { IoIosSearch } from "react-icons/io";
+import {IoIosSearch} from "react-icons/io";
 import BoxDetail from "../components/BoxDetail";
 
 const Register = () => {

@@ -1,19 +1,19 @@
 import BoxDetail from "../components/BoxDetail";
 import {
-  HStack,
-  Button,
-  InputGroup,
-  InputRightElement,
-  Input,
-  Table,
-  TableCaption,
-  Thead,
-  Th,
-  Tbody,
-  Td,
-  Box,
+    Box,
+    Button,
+    HStack,
+    Input,
+    InputGroup,
+    InputRightElement,
+    Table,
+    TableCaption,
+    Tbody,
+    Td,
+    Th,
+    Thead,
 } from "@chakra-ui/react";
-import { IoIosSearch } from "react-icons/io";
+import {IoIosSearch} from "react-icons/io";
 
 const Course = () => {
   return (
